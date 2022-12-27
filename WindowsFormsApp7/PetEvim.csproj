@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D85F36C0-BF1E-4C0B-91E5-4CD4B493533E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp7</RootNamespace>
+    <AssemblyName>WindowsFormsApp7</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BilgilerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilgilerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BilgilerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilgilerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BilgilerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilgilerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BilgilerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BilgilerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnasayfa.Designer.cs">
+      <DependentUpon>FormAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBorclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorclar.Designer.cs">
+      <DependentUpon>FormBorclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHosgeldiniz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHosgeldiniz.Designer.cs">
+      <DependentUpon>FormHosgeldiniz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandKayit.Designer.cs">
+      <DependentUpon>FormRandKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandData.Designer.cs">
+      <DependentUpon>FormRandData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandevu.Designer.cs">
+      <DependentUpon>FormRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHatir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHatir.Designer.cs">
+      <DependentUpon>FormHatir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKayıt.Designer.cs">
+      <DependentUpon>FormKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPetler.Designer.cs">
+      <DependentUpon>FormPetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSahiplendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSahiplendirme.Designer.cs">
+      <DependentUpon>FormSahiplendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSahipler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSahipler.Designer.cs">
+      <DependentUpon>FormSahipler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShplndrmeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShplndrmeEkle.Designer.cs">
+      <DependentUpon>FormShplndrmeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVet.Designer.cs">
+      <DependentUpon>FormVet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrnekDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrnekDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBosluk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBosluk.Designer.cs">
+      <DependentUpon>UserControlBosluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSahiplendirme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSahiplendirme.Designer.cs">
+      <DependentUpon>UserControlSahiplendirme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAnasayfa.resx">
+      <DependentUpon>FormAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBorclar.resx">
+      <DependentUpon>FormBorclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHosgeldiniz.resx">
+      <DependentUpon>FormHosgeldiniz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandKayit.resx">
+      <DependentUpon>FormRandKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandData.resx">
+      <DependentUpon>FormRandData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHatir.resx">
+      <DependentUpon>FormHatir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKayıt.resx">
+      <DependentUpon>FormKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPetler.resx">
+      <DependentUpon>FormPetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandevu.resx">
+      <DependentUpon>FormRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSahiplendirme.resx">
+      <DependentUpon>FormSahiplendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSahipler.resx">
+      <DependentUpon>FormSahipler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShplndrmeEkle.resx">
+      <DependentUpon>FormShplndrmeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVet.resx">
+      <DependentUpon>FormVet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlBosluk.resx">
+      <DependentUpon>UserControlBosluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSahiplendirme.resx">
+      <DependentUpon>UserControlSahiplendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BilgilerDataSet.xsc">
+      <DependentUpon>BilgilerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BilgilerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BilgilerDataSet.xss">
+      <DependentUpon>BilgilerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet1.xsc">
+      <DependentUpon>BilgilerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BilgilerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BilgilerDataSet1.xss">
+      <DependentUpon>BilgilerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet2.xsc">
+      <DependentUpon>BilgilerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BilgilerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BilgilerDataSet2.xss">
+      <DependentUpon>BilgilerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet3.xsc">
+      <DependentUpon>BilgilerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BilgilerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BilgilerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BilgilerDataSet3.xss">
+      <DependentUpon>BilgilerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OrnekDataSet.xsc">
+      <DependentUpon>OrnekDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrnekDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrnekDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrnekDataSet.xss">
+      <DependentUpon>OrnekDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
